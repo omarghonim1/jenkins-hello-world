@@ -12,7 +12,7 @@ pipeline {
       steps {
         git(branch: 'main', url: 'https://github.com/omarghonim1/jenkins-hello-world.git')
         sh 'mvn clean package -DskipTests=true'
-        archiveArtifacts 'target/hello-world-*.jar'
+        archiveArtifacts 'target/hello-demo-*.jar'
       }
     }
 
